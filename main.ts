@@ -8,7 +8,7 @@ input.onButtonPressed(Button.A, function () {
 let light_level = 0
 basic.showNumber(0)
 ESP8266_IoT.initWIFI(SerialPin.P8, SerialPin.P12, BaudRate.BaudRate115200)
-ESP8266_IoT.connectWifi("Guest", "Jcg23366761")
+ESP8266_IoT.connectWifi("ssid", "password")
 basic.showNumber(1)
 let client_id = randint(0, 99999999)
 ESP8266_IoT.setMQTT(

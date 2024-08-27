@@ -1,6 +1,6 @@
 input.onButtonPressed(Button.A, function () {
     light_level = pins.analogReadPin(AnalogPin.P1)
-    ESP8266_IoT.publishMqttMessage(convertToText(light_level), "myhome/null/bedroom-light", ESP8266_IoT.QosList.Qos2)
+    ESP8266_IoT.publishMqttMessage(convertToText(light_level), "myhome/null/bedroom-light", ESP8266_IoT.QosList.Qos1)
     OLED.clear()
     OLED.writeString("Light Level: ")
     OLED.writeNumNewLine(light_level)
